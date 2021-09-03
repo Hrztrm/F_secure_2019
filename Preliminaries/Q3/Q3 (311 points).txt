@@ -1,0 +1,27 @@
+Q3 (311 points)
+
+Identify the file and then extract the flag.
+
+Hint: flag is in radix 55?, 65?, 75?, .? or 95?
+
+1. used "cat" on the file
+
+2. Skimmed through it and found some lines that looks interesting.
+
+""
+Here is the flag as we discussed.
+
+
+
+AohEiF(I<gASu!rA7]7r@V'Q
+
+
+
+I hope you remember what base it is :p
+""
+
+3. It looks the flag is the gibberish, and based on the hints it is in a different base (radix = base, experience from math).
+
+4. Open cyberchef and did a trial and error for all the base, finally found the base which was base 85
+
+Flag: fsbase85encodecyber 
