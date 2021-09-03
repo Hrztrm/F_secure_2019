@@ -1,0 +1,15 @@
+Q4 (311 points)
+
+Identify the flag from the image. Key can be found in the file to unlock the flag.
+
+1. A picture was given, passed it through exiftool just to be safe. Nothing unsual there.
+
+2. Passed it through hex edit, found an interesting line that says "used stego technique to hide my super password :D" and "did you try 'fsecure' as a password?". So the flag is hidden using stego techniques, steghide time.
+
+3. When using the info command on the file, there are embedded data hidden within it.
+
+4. Used the extract -sf option to get the data, it asked for a passphrase. I used the given 'fsecure' which worked.
+
+5. Flag was received in a flag.txt file.
+
+Flag: fsmeta+stegcyber
