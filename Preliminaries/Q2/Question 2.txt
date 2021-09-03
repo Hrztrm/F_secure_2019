@@ -1,0 +1,19 @@
+Question 2
+Investigate the Spreadsheet and identify the flag.
+
+Hint: Flag is in a cell hidden within the sheet.
+
+
+1. I opened the given folder, and made a quick search if there were any data that can be found within the excel. Which didn't work.
+
+2. I extracted the contents of the file with 7zip, and went into the "xl" folder.
+
+3. Using powershell, I "cat" the sharedStrings.xml and the flag was found
+
+Reference: https://www.scip.ch/en/?labs.20180503
+
+Explanation from what I understand: The sharedStrings.xml file contains values that are found at in a cell within the excel document. SO it can be seen as a history of sorts. 
+
+Interesting to note is that the strings that are recorded are saved in chronological order. So you can trace the order in which data was entered.
+
+flag: fssUPERhidDEncyber
